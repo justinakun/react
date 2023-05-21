@@ -7,7 +7,7 @@ import ClassDiv from "./components/ClassDiv";
 import Greeting from "./components/Greeting";
 import Card from "./components/Card";
 import Avatar from "./components/Avatar";
-
+import Products from "./components/Products";
 // apibreziam komponento pavadinima, visada didzioji raide
 // geroji praktika: failo pavadinimas toks pat kaip komponento pavadinimas
 function App() {
@@ -25,6 +25,7 @@ function App() {
 
   return (
     <div>
+      <Products />
       <Avatar name="Justina Kunigonyte" />
       <Avatar name="Gediminas Narbutas" />
       <Avatar />

@@ -7,9 +7,7 @@ function Card(props) {
             <div class="cardContDiv">
                 <p class="cardTitle">{props.title}</p>
                 <p class="cardSubtitle">{props.subtitle}</p>
-            </div>
-            
-
+            </div>       
         </div>
     )
 }
