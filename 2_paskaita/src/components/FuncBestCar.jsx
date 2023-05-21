@@ -23,7 +23,6 @@ const FuncBestCar = () => {
             </button>
         </div>
     )
-
 }
 
 export default FuncBestCar
