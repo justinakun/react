@@ -8,8 +8,21 @@ const FuncCar = () => {
         year: 1964
     });
 
-    const changeColor =  () => {
-        setState({ ...state, color: "blue" });
+    // const changeColor =  () => {
+    //     setState({ ...state, color: "blue" });
+    // }
+
+    const changeColor = () => {
+        // 1 budas pasiimti is state objekta
+        setState ({ ...state, color: "blue"});
+
+         // 2 budas pasiimti is setState objekta
+        setState((previousState) => ({ ...previousState, color: "blue"}));
+
+       // 3 budas pasiimti is setState objekta, bet su return
+        setState((previousState) => {
+            return { ...previousState, color: "blue"};
+        }) 
     }
 
     return (
