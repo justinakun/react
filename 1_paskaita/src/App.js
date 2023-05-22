@@ -8,6 +8,8 @@ import Greeting from "./components/Greeting";
 import Card from "./components/Card";
 import Avatar from "./components/Avatar";
 import Products from "./components/Products";
+import Welcome from "./Welcome";
+import { useState } from "react";
 // apibreziam komponento pavadinima, visada didzioji raide
 // geroji praktika: failo pavadinimas toks pat kaip komponento pavadinimas
 function App() {
@@ -23,8 +25,16 @@ function App() {
 
   const surname = getSurname();
 
+  const [loggedIn, setLoggedIn] = useState(false);
+
+  const handleLogin = () => {
+    setLoggedIn((previousValue) => !previousValue);
+  };
+
   return (
     <div>
+      <Welcome isLoggedIn={loggedIn} />
+      <button onClick={handleLogin}>{loggedIn ? "Log out" : "Log in"}</button>
       <Products />
       <Avatar name="Justina Kunigonyte" />
       <Avatar name="Gediminas Narbutas" />
