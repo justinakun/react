@@ -7,10 +7,16 @@ const Counter = () => {
 
     const increaseNumber = () => {
         setNumber(number + 1)
+        // setNumber((previousNumber) => previousNumber + 1) // Rokas example
     }
 
     const decreaseNumber = () => {
         setNumber(number - 1)
+        //setNumber((previousNumber) => previousNumber - 1) // Rokas example
+    }
+
+    const reset = () => {
+        setNumber(0);
     }
 
     return (
@@ -18,6 +24,7 @@ const Counter = () => {
             <h1>{number}</h1>
             <button onClick={increaseNumber}>Add 1</button>
             <button onClick={decreaseNumber}>Subtract 1</button>
+            <button onClick={reset}>Reset count</button>
         </div>
     )
 }
