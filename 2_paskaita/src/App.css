@@ -36,3 +36,70 @@
     transform: rotate(360deg);
   }
 }
+
+.heroDiv {
+  background-color: lightskyblue;
+  padding: 2rem;
+  color: white;
+}
+
+.btnText {
+  border: none;
+  background-color: transparent;
+  color: lightskyblue;
+  font-weight: bold;
+  padding: 1rem;
+  margin-right: 1rem;
+  margin-top: 1rem;
+}
+
+.btnContained {
+  background-color: lightskyblue;
+  border: none;
+  padding: 1rem;
+  color: white;
+  margin-right: 1rem;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+.btnOutlined {
+  background-color: transparent;
+  color: lightskyblue;
+  border: lightskyblue 1px solid;
+  padding: 1rem;
+  border-radius: 3px;
+
+}
+
+.btnText:hover,
+.btnContained:hover,
+.btnOutlined:hover {
+  color: pink;
+}
+
+.divMood {
+  text-align: center;
+}
+
+.btnMood {
+  margin-right: 1rem;
+  margin-left: 1rem;
+  padding: 1rem;
+  border: none;
+  border-radius: 3px;
+  background-color: rgb(243, 165, 156);
+  color: white;
+}
+
+.msgMood {
+  color: palevioletred;
+}
+
+.btnMood:hover {
+  background-color: transparent;
+  color:  rgb(243, 165, 156);
+  border: 1px solid  rgb(243, 165, 156);
+}
+
+
