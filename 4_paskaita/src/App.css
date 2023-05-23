@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+.containerAll {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+
+}
+
+.containerLeft {
+  flex: 4;
+}
+
+.containerRight {
+  flex: 1;
+}
+
+.calendarPic {
+  width: 500px;
+  float: right;
+  padding-right: 2rem;
+}
+
+.titleDiv {
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  flex: 3;
+  font-size:x-large;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.arrowDiv {
+  flex: 1;
+  flex-wrap: nowrap;
+
+}
+
+.arrow {
+  border: black 1px solid;
+  padding: 0.3rem;
+  margin-right: 0.2rem;
+  border-radius: 3px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+span {
+  font-weight: lighter;
+  color: green;
+}
+
+.flex {
+  display: flex;
+}
+
+.miniBtn {
+  width: 2rem;
+  height: 2rem;
+  background-color: transparent;
+  border: 1px lightgrey solid;
+  border-radius: 3px;
+  color: black;
+}
+
+.alignCenter {
+  align-items: center;
+}
+
+.bigBtn {
+  background-color: rgb(85, 186, 226);
+  color: white;
+  border: none;
+  padding: 0.5rem 2rem 0.5rem 2rem;
+  border-radius: 3px;
+  margin-left: 0.5rem;
+}
+
+.btnsContainer {
+  padding-bottom: 0.5rem;
+}
