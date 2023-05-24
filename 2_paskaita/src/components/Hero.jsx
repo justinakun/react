@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types'
+import PropTypes from 'prop-types';
 
 const Hero = ({title, subtitle}) => {
         return (
@@ -6,12 +6,12 @@ const Hero = ({title, subtitle}) => {
                 {title && <h1>{title}</h1>}
                 {subtitle && <p>{subtitle}</p>}
             </div>            
-        )
-    }
+        );
+    };
 
 Hero.propTypes = {
     title: PropTypes.string,
     subtitle: PropTypes.string
-}
+};
 
-export default Hero
+export default Hero;
