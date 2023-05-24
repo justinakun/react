@@ -4,7 +4,6 @@ import { useState } from 'react';
 import Button from './Button';
 import { AiOutlineSearch } from "react-icons/ai";
 
-
 const Product = ({image, title, price, description, availability, category}) => {
 
     const[quantity, setQuantity] = useState(1);
