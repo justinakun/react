@@ -1,15 +1,5 @@
-import PropTypes from 'prop-types'
+const Button = ({ children, ...rest }) => {
+    return <button className='bigBtn' {...rest}>{children}</button>
+};
 
-const Button = ({title}) => {
-    return <button className='bigBtn'>{title}</button>
-}
-
-Button.propTypes = {
-    title: PropTypes.string
-}
-
-Button.defaultProps = {
-    title: "Submit"
-}
-
-export default Button
+export default Button;
