@@ -2,6 +2,7 @@ import PropTypes from 'prop-types'
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io"
 import { useState } from 'react'
 import Button from './Button'
+import { AiOutlineSearch } from "react-icons/ai"
 
 
 const Product = ({image, title, price, description, availability, category}) => {
@@ -20,6 +21,7 @@ const Product = ({image, title, price, description, availability, category}) => 
         <div className="containerAll">
             <div className="containerLeft">
                 <img src={image} alt="Calendar" className='calendarPic'></img>
+                <AiOutlineSearch className='searchBtn'/>
             </div>
             <div className="containerRight">
                 <div>
@@ -30,10 +32,10 @@ const Product = ({image, title, price, description, availability, category}) => 
                             <IoIosArrowForward className='arrow'/>
                         </div>                        
                     </div>                  
-                    <p className='bold'>{price}</p>
-                    {description.split(/(?=[A-Z])/).map((line) => <p>{line}</p>)}
+                    <p className='bold bigger'>{price}</p>
+                    {description.split(/:(?!\/)|(?=[A-Z])/).map((line) => <p className='descriptionPara'>{line}</p>)}
                     <p className='bold'>Availability: <span>{availability} in stock</span></p>
-                    <div className='flex alignCenter btnsContainer'>                        
+                    <div className='flex alignCenter btnsContainer'>                       
                         <button className="miniBtn" onClick={decreaseQuantity}>-</button>
                         <button className="miniBtn">{quantity}</button>
                         <button className="miniBtn" onClick={increaseQuantity}>+</button>                    

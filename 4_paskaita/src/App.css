@@ -4,20 +4,19 @@
   display: flex;
   justify-content: center;
   margin: 0 auto;
-
+  width: 850px;
 }
 
 .containerLeft {
-  flex: 4;
+  flex: 6;
 }
 
 .containerRight {
-  flex: 1;
+  flex: 5;
 }
 
 .calendarPic {
   width: 500px;
-  float: right;
   padding-right: 2rem;
 }
 
@@ -35,6 +34,8 @@
 .arrowDiv {
   flex: 1;
   flex-wrap: nowrap;
+  position: relative;
+  bottom: 10px;
 
 }
 
@@ -81,5 +82,20 @@ span {
 }
 
 .btnsContainer {
-  padding-bottom: 0.5rem;
+  padding-bottom: 1rem;
+}
+
+.searchBtn {
+  position: relative;
+  left: 470px;
+  bottom: 450px;
+}
+
+.descriptionPara {
+  padding-bottom: 0.2rem;
+}
+
+.bigger {
+  font-size:larger;
+  margin-top: 0;
 }
