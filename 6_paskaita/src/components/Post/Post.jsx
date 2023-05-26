@@ -4,7 +4,7 @@ import "./Post.css";
 
 const Post = ({ post }) => {
   const [comments, setComments] = useState([]);
-  const { title, body, id } = post;
+  const { title, body, id } = post; //object destructuring
 
   useEffect(() => {
     fetch(`https://jsonplaceholder.typicode.com/comments?postId=${id}`)
