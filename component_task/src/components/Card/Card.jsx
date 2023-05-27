@@ -30,7 +30,7 @@ const Card = ({ country }) => {
 
 Card.propTypes = {
     country: PropTypes.shape({
-        flags: PropTypes.string.isRequired,
+        flags: PropTypes.object.isRequired,
         name: PropTypes.object.isRequired
     })
 }
