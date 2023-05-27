@@ -1,10 +1,10 @@
 import "./App.css";
-import Cards from "./components/Cards/Cards";
+import Game from "./components/Game/Game";
 
 function App() {
   return (
     <div>
-      <Cards />
+      <Game greeting="GUESS THE FLAG" name="Vardeni Pavardeni" />
     </div>
   );
 }
