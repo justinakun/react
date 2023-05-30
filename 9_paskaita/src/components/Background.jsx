@@ -1,26 +1,30 @@
 import { useState } from "react";
 
 const Background = () => {
-  const [userInput, setUserInput] = useState("");
-  const [backgroundColor, setBackgroundColor] = useState("white");
+  const [text, setText] = useState("");
 
   const handleInputChange = (e) => {
-    setUserInput(e.target.value);
-    if (userInput.length < 2) {
-      setBackgroundColor("white");
-    } else if (userInput.length >= 2 && userInput.length < 5) {
-      setBackgroundColor("yellow");
-    } else if (userInput.length >= 5 && userInput.length < 8) {
-      setBackgroundColor("green");
+    setText(e.target.value);
+  };
+
+  const getBackgroundColor = (textLength) => {
+    if (textLength < 3) {
+      return "white";
+    } else if (textLength >= 3 && textLength < 6) {
+      return "yellow";
+    } else if (textLength >= 6 && textLength < 9) {
+      return "green";
     } else {
-      setBackgroundColor("red");
+      return "red";
     }
   };
+
+  const backgroundColor = getBackgroundColor(text.length);
 
   return (
     <div style={{ backgroundColor: backgroundColor }}>
       <h2>Write something and see the background change!</h2>
-      <input type="text" value={userInput} onChange={handleInputChange} />
+      <input type="text" value={text} onChange={handleInputChange} />
     </div>
   );
 };
