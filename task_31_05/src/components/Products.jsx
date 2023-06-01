@@ -10,8 +10,8 @@ const Products = () => {
     fetch("https://golden-whispering-show.glitch.me/")
       .then((resp) => resp.json())
       .then((response) => {
-        setItems(response);
         setIsLoading(false);
+        setItems(response);
       })
       .catch((error) => console.log(error));
   }, []);
