@@ -1,4 +1,12 @@
 body, html {
     width: 100%;
     margin: 0;
+    height: 100%;
+    padding: 0;
+}
+
+.appContainer {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
