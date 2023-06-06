@@ -1,8 +1,13 @@
 import { Link as RouterLink } from "react-router-dom";
+import "./Link.css";
 
 const Link = ({ children, ...rest }) => {
   return (
-    <RouterLink style={{ color: "green", padding: 16 }} {...rest}>
+    <RouterLink
+      className="link"
+      style={{ color: "green", padding: 16 }}
+      {...rest}
+    >
       {children}
     </RouterLink>
   );

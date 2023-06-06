@@ -1,4 +1,4 @@
-import Menu from "./Menu";
+import Menu from "../pages/Menu";
 import "./Footer.css";
 
 const Footer = () => {
@@ -8,7 +8,7 @@ const Footer = () => {
     <div className="footerContainer">
       <Menu />
       <p className="footerText">
-        <small>© Starbucks {today}. All rights Reserved.</small>
+        <small>© Starbucks {today}. All rights reserved.</small>
       </p>
     </div>
   );

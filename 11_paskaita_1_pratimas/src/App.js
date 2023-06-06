@@ -8,6 +8,7 @@ import Services from "./pages/Services";
 import CompletedTasks from "./pages/CompletedTasks";
 import Contacts from "./pages/Contacts";
 import Footer from "./components/Footer";
+import NotFound from "./pages/NotFound";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/services" element={<Services />} />
           <Route path="/completedTasks" element={<CompletedTasks />} />
           <Route path="/contacts" element={<Contacts />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
 
