@@ -7,11 +7,20 @@ import News from "./pages/News";
 import Services from "./pages/Services";
 import CompletedTasks from "./pages/CompletedTasks";
 import Contacts from "./pages/Contacts";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<Header />} />
+      <Route
+        path="/"
+        element={
+          <div>
+            <Header />
+            <Footer />
+          </div>
+        }
+      />
       <Route path="/main" element={<Main />} />
       <Route path="/aboutUs" element={<AboutUs />} />
       <Route path="/news" element={<News />} />

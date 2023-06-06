@@ -1,9 +1,10 @@
 import PropTypes from "prop-types";
+import "./TaskImage.css";
 
 const TaskImage = ({ imageURL, title }) => {
   return (
-    <div>
-      <img src={imageURL} alt={title} />
+    <div className="taskImageContainer">
+      <img class="taskImage" src={imageURL} alt={title} />
     </div>
   );
 };

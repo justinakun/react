@@ -1,0 +1,8 @@
+.background {
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/74/171/826/starbucks-logo-art-wallpaper-preview.jpg");
+    height: 100vh;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

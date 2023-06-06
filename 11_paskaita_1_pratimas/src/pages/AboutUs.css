@@ -1,0 +1,12 @@
+.aboutUsContainer {
+    text-align: center;
+}
+
+.aboutImage {
+    width: 60%;
+}
+
+.aboutDescription {
+    padding-left: 20%;
+    padding-right: 20%;
+}

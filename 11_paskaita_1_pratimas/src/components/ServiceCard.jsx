@@ -1,9 +1,11 @@
 import PropTypes from "prop-types";
+import "./ServiceCard.css";
+
 const ServiceCard = ({ name, description }) => {
   return (
-    <div>
+    <div className="serviceCardContainer">
       <h3>{name}</h3>
-      <p>{description}</p>
+      <p className="serviceCardDescription">{description}</p>
     </div>
   );
 };

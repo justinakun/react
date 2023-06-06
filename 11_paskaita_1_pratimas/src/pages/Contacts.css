@@ -1,0 +1,38 @@
+.contactsContainer {
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.contactForm {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 1rem;
+}
+
+.nameInput,
+.emailInput,
+.messageInput {
+    width: 300px;
+    padding: 0.5rem;
+    border: 1px solid lightgray;
+    border-radius: 2%;
+}
+
+.sendMessageButton {
+    background-color: transparent;
+    padding: 1rem;
+    border: 3px grey solid;
+    border-radius: 3px;
+}
+
+.sendMessageButton:hover {
+    background-color: grey;
+    color: white;
+}
+
+.finalMessage {
+    background-color: lightgreen;
+    padding: 1rem;
+    border-radius: 3px;
+}

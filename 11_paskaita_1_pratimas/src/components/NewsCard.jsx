@@ -1,10 +1,11 @@
 import PropTypes from "prop-types";
+import "./NewsCard.css";
 
 const NewsCard = ({ heading, text }) => {
   return (
-    <div>
+    <div className="newsContainer">
       <h1>{heading}</h1>
-      <p>{text}</p>
+      <p className="newsText">{text}</p>
     </div>
   );
 };

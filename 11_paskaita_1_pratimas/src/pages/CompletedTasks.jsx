@@ -1,8 +1,9 @@
 import TaskImage from "../components/TaskImage";
+import "./CompletedTasks.css";
 
 const CompletedTasks = () => {
   return (
-    <div>
+    <div className="completedTasksContainer">
       <TaskImage
         imageURL="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQphEfrX2jW7nxmXuPDqjuAtRWOa55vf3uIPQ&usqp=CAU"
         title="Starbucks1"

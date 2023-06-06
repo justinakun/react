@@ -1,0 +1,10 @@
+.serviceCardContainer {
+    width: 300px;
+    padding: 3rem;
+    border: 1px solid lightgray;
+    border-radius: 3%;
+}
+
+.serviceCardDescription {
+    text-align: justify;
+}

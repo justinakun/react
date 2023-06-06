@@ -1,0 +1,7 @@
+.completedTasksContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 1rem;
+    justify-items: center;
+    row-gap: 1rem;
+}

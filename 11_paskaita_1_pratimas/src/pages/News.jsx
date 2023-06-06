@@ -1,5 +1,6 @@
 import NewsCard from "../components/NewsCard";
 import { useEffect, useState } from "react";
+import "./News.css";
 
 const News = () => {
   const [news, setNews] = useState([]);
@@ -14,7 +15,7 @@ const News = () => {
   return (
     <div>
       {news.length > 0 && (
-        <div>
+        <div className="allNewsContainer">
           <NewsCard heading={news[0].title} text={news[0].body} />
           <NewsCard heading={news[1].title} text={news[1].body} />
         </div>

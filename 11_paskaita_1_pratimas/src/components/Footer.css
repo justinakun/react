@@ -1,0 +1,19 @@
+.footerContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightgoldenrodyellow;
+    padding-top: 0.2rem;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding-top: 0.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.footerText {
+
+}
