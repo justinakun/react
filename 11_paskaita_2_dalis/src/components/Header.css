@@ -1,0 +1,36 @@
+.headerContainer {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid white;
+    padding: 0.7rem;
+}
+
+.headerButton {
+    color: white;
+    background-color: transparent;
+    border: 1px transparent solid;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+.headerButton:hover {
+    border: 1px solid;
+    border-radius: 3px;
+}
+
+.mainBtn:hover {
+    color: rgb(179,160,207);
+    border-color: rgb(179,160,207);
+}
+
+.usersBtn:hover {
+    color: rgb(253,94,9);
+}
+
+.userBtn:hover {
+    color: rgb(253,201,89);
+}

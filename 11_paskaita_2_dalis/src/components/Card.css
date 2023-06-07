@@ -1,0 +1,6 @@
+.cardContainer {
+    width: 300px;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 1px solid white;
+}

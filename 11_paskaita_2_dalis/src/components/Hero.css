@@ -1,0 +1,41 @@
+.heroContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 4rem;
+    gap: 5rem;
+}
+
+.heroImage {
+    border-radius: 10px;
+    justify-self: end;
+}
+
+.bigHeroText {
+    font-size: 5rem;
+    font-weight: lighter;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid white;
+}
+
+.smallHeroText {
+    padding-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.smallHeroTextSecond {
+
+}
+
+.imageIcon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 5px solid black;
+    position: relative;
+    margin-left: -15px;
+}
+
+.allIcons {
+    padding-left: 1rem;
+}

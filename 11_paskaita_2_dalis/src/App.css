@@ -1,0 +1,19 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    position: relative;
+    min-height: 100%;
+}
+
+.appContainer {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.appContent {
+    flex: 1;
+}
