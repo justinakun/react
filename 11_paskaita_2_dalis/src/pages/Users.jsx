@@ -1,9 +1,12 @@
 import Card from "../components/Card";
 import { useState, useEffect } from "react";
 import "./Users.css";
+import { useLocation } from "react-router-dom";
 
 const Users = () => {
   const [users, setUsers] = useState([]);
+  const location = useLocation();
+  const isClickable = location.pathname === "/users";
 
   useEffect(() => {
     fetch("https://jsonplaceholder.typicode.com/users")
@@ -14,6 +17,7 @@ const Users = () => {
 
   return (
     <div className="allCardsContainer">
+      <div className="intro">LEARN MORE ABOUT THE USERS</div>
       {users.length > 0 &&
         users.map((user) => (
           <Card
@@ -21,8 +25,9 @@ const Users = () => {
             name={user.name}
             email={user.email}
             phone={user.phone}
-            website={user.website}
+            username={user.username}
             userId={user.id}
+            isClickable={isClickable}
           />
         ))}
     </div>

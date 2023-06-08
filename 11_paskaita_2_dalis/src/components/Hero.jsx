@@ -1,4 +1,6 @@
 import "./Hero.css";
+import { HiArrowCircleRight } from "react-icons/hi";
+import { RxDotFilled, RxDot } from "react-icons/rx";
 
 const Hero = () => {
   return (
@@ -38,6 +40,16 @@ const Hero = () => {
           src="https://img.freepik.com/premium-photo/young-caucasian-woman-isolated-purple-background-person-pointing-by-hand-shirt-copy-space-proud-confident_1187-151347.jpg"
           alt="Woman"
         />
+        <p className="black businessBoost">YOUR BUSINESS BOOST</p>
+        <div className="corner"></div>
+        <div className="dots">
+          <RxDotFilled className="dot" />
+          <RxDot className="dot" />
+        </div>
+        <div className="bookDemoDiv">
+          <p className="black">Book Demo Call</p>
+          <HiArrowCircleRight className="arrowIcon" />
+        </div>
       </div>
     </div>
   );

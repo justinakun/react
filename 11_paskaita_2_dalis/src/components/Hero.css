@@ -12,19 +12,18 @@
 
 .bigHeroText {
     font-size: 5rem;
-    font-weight: lighter;
     padding-bottom: 2rem;
     border-bottom: 1px solid white;
 }
 
 .smallHeroText {
     padding-top: 1rem;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 5fr 3fr;
 }
 
 .smallHeroTextSecond {
-
+    padding-left: 2.5rem;
 }
 
 .imageIcon {
@@ -39,3 +38,66 @@
 .allIcons {
     padding-left: 1rem;
 }
+
+.black {
+    color: black;
+    font-weight:500;
+}
+
+.heroImageContainer {
+    position: relative;
+    display: inline-block;
+}
+
+.businessBoost{
+    position: absolute;
+    top: -15px;
+    right: 490px;
+    padding: 25px;
+}
+
+.bookDemoDiv {
+    border: 1px black solid;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 2rem;
+    padding-right: 0.5rem;
+    position: absolute;
+    top: 335px;
+    right: 40px;
+    width: 500px;
+}
+
+.arrowIcon {
+    width: 50px;
+    height: 50px;
+    color: black;
+}
+
+.corner {
+    width: 180px;
+    height: 100px;
+    background-color: black;
+    position: absolute;
+    top: -60px;
+    right: -25px;
+    border-radius: 30px;
+}
+
+.dots {
+    width: 60px;
+    height: 60px;
+    color: white;
+    position: absolute;
+    top: 7px;
+    right: 30px;
+}
+
+.dot {
+    height: 20px;
+    width: 20px;
+}
+
+

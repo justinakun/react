@@ -1,6 +1,6 @@
 .headerContainer {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     border-bottom: 1px solid white;
     padding: 0.7rem;
 }
@@ -31,6 +31,33 @@
     color: rgb(253,94,9);
 }
 
-.userBtn:hover {
+.signUpContainer {
+    display: flex;
+}
+
+.loginIcon {
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 0.5rem;
+}
+
+.loginIcon:hover {
+    background-color: lightgrey;
+    color: black;
+}
+
+.allButtonsContainer {
+    margin-right: 17rem;
+}
+
+.logoDiv {
+    height: 2rem;
+}
+
+.logoImg {
+    height: 100%;
+}
+
+.loginButton:hover {
     color: rgb(253,201,89);
 }
