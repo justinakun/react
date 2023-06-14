@@ -4,11 +4,11 @@ import { UserContext } from "../../context/UserContext";
 import { MAIN_ROUTE, CONTACTS_ROUTE, PROFILE_ROUTE } from "../../routes/const";
 import { showUserFullName } from "../../utils/user";
 import { FaUserCircle } from "react-icons/fa";
-import "./Topbar.css";
+import "./Topbar.scss";
 
 const Topbar = () => {
   const { user } = useContext(UserContext);
-  console.log(user);
+
   return (
     <nav className="navigation">
       <div>Logo</div>
