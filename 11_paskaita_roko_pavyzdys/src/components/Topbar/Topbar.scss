@@ -5,15 +5,21 @@
   padding: 2rem;
   background-color: black;
   color: white;
-}
 
-.navigation a {
-  color: inherit;
-}
+  a {
+    color: inherit;
 
-a.user-container {
-  color: inherit;
-  display: flex;
-  align-items: center;
-  gap: 0.25rem;
+    &.user-container {
+      color: inherit;
+      display: flex;
+      align-items: center;
+      gap: 0.25rem;
+    }
+  }
+
+  &-items {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+  }
 }
